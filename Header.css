@@ -1,0 +1,372 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.top-nav, .middle-nav, .down-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.top-nav {
+    background-color: #800020;
+    color: white;
+}
+
+.middle-nav {
+    background-color: #800020;
+    color: #FFC107;
+    border-top: 2px solid #ff4507;
+}
+
+.down-nav {
+    background-color: #FFC107;
+    color: #800020;
+}
+
+.list, .middle-list {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.about-dropdown {
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.sidebar {
+    display: none;
+    flex-direction: row;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 750px;
+    z-index: 100;
+}
+
+.about-dropdown:hover .sidebar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    color: #800020;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.about-list, .content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-list li, .content ul li {
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background 0.3s;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.about-list li:hover, .content ul li:hover {
+    background: #f0f0f0;
+}
+
+.about-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.about-card div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background-color: #f8f8f8;
+    color: #800020;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 140px;
+    border: 1px solid #ddd;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+.card:hover {
+    background-color: #800020;
+    color: white;
+    transform: scale(1.05);
+}
+
+.products-dropdown {
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.products-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    z-index: 100;
+}
+
+.products-dropdown:hover .products-menu {
+    display: flex;
+}
+
+.product-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background-color: #f8f8f8;
+    color: #800020;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+.tab:hover, .tab.active {
+    background-color: #800020;
+    color: white;
+    transform: scale(1.05);
+}
+
+.product-content {
+    display: flex;
+    gap: 20px;
+}
+
+.product-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-content ul li {
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background 0.3s;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.product-content ul li:hover {
+    background: #f0f0f0;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.product-details h2 {
+    color: #800020;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-details ul li {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.online-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.online-btn button {
+    background-color: #800020;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+.online-btn button:hover {
+    background-color: #D2691E;
+    transform: scale(1.05);
+}
+
+.online-btn ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.online-btn ul li {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+#E-btn {
+    background-color: white;
+    color: #800020;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 200px;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+.search {
+    background-color: #9f3a53;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #f7023f;
+    font-weight: bold;
+}
+::placeholder {
+    color: white;
+}
+
+li:hover {
+    background-color: #f7023f;
+}
+
+.list li, .middle-list li, .about-list li, .content ul li, .product-content ul li {
+    display: flex;
+    align-items: center;
+}
+
+  .Asize img{
+    flex-direction: row;
+    gap: 10px;
+    height: 40px;
+    width: 40px;
+}  
+
+.Asize {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.lng {
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.lng-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    z-index: 100;
+}
+
+.lng:hover .lng-list {
+    display: block;
+}
+
+.lng-list li {
+    padding: 10px;
+    cursor: pointer;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .top-nav .list,
+    .middle-nav .list,
+    .down-nav .list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .top-nav .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .top-nav .list.active,
+    .middle-nav .list.active,
+    .down-nav .list.active {
+        display: flex;
+    }
+
+    .middle-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .middle-nav .Asize {
+        margin-top: 10px;
+    }
+}
+.Asize button {
+    background-color: #800020;
+    color: white;
+    padding: 10px 15px;
+    border: 1px solid #b74f69;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+.Asize button:hover {
+    background-color: #D2691E;
+    transform: scale(1.05);
+}

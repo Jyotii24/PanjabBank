@@ -1,0 +1,109 @@
+
+
+footer {
+    background-color: #fff;
+    padding: 20px 40px;
+}
+
+.top-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.top-footer h1 {
+    font-size: 24px;
+    color: #800000;
+    font-weight: bold;
+}
+
+.top-footer ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    font-weight: bold;
+}
+
+.middle-footer {
+    background-color: #f4a700;
+    padding: 10px;
+    text-align: center;
+}
+
+.middle-footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.middle-footer ul li {
+    color: #800000;
+    cursor: pointer;
+}
+
+.middle-footer ul li:hover {
+    text-decoration: underline;
+}
+
+.bottom-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.bottom-footer div {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.bottom-footer h2 {
+    font-size: 16px;
+    color: #800000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bottom-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bottom-footer ul li {
+    color: #333;
+    font-size: 14px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.bottom-footer ul li:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .top-footer,
+    .middle-footer ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .top-footer h1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .top-footer ul {
+        justify-content: center;
+    }
+
+    .middle-footer ul {
+        gap: 10px;
+    }
+}
